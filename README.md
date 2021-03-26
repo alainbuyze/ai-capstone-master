@@ -1,6 +1,17 @@
 # IBM AI Enterprise Workflow Capstone - Alain Buyze
 
 ### Are there unit tests for the API?
+#### First start the API
+Set the current directory to the root of the local replica of the repository
+Run the command **python app.py**
+Check if the app is runnin by opening **http://0.0.0.0:8080/** - you should seee the welcome page
+#### Run the tests
+In the directory **unittests**, execute the python module **ApiTests.py**
+This will execute 4 test:
+1. Test the train functionality
+2. test fr appropriate faile in case of no data or ill-formed input
+3. test the predict functionality
+4. test the log functionality
 
 ## Are there unit tests for the model?
 
