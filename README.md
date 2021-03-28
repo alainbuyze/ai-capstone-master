@@ -58,6 +58,8 @@ Check out the Python Notebook **Capstone EDA.ipynb** to see the visualisations u
 2. -> revenue per month
 3. -> evolution of the Revenue
 4. -> view spectral relationship between revenue and date 
+5. -> boxplot of revenue, unique streams, total views per month and per year
+6. -> correlation pairplot
 
 ## Is everything containerized within a working Docker image?
 
