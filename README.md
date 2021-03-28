@@ -84,6 +84,11 @@ Check out the Python Notebook **Capstone EDA.ipynb** to see the visualisations u
 6. -> correlation pairplot
 
 ## Is everything containerized within a working Docker image?
+Open a terminal from the root directory of the repository and run the commands
+1. docker build -t capstone-revenue-ml .
+2. docker image ls (to see the image **capstone-revenue-ml** was created
+3. docker run -p 4000:8080 capstone-revenue-ml
+4. check that the Flask API is running at http://0.0.0.0:8080/dashboard
 
 
 ## Did they use a visualization to compare their model to the baseline model?
