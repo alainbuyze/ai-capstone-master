@@ -33,11 +33,13 @@ This will execute 4 test:
 4. Test if content of Preduct log file can be retrieved
 
 ## Can all of the unit tests be run with a single script and do all of the unit tests pass?
+From the root directory of the repository, run **python runtests.py** 
  
 ## Is there a mechanism to monitor performance?
 
 
 ## Was there an attempt to isolate the read/write unit tests from production models and logs?
+This is achieved by the **parameter test=True** in calling the module **update_train_log** and **update_predict_log** in the **LoggerTests.py** module. This will ensure that the logfiles names have no date identifier in their name, unlike the regular log files. 
 
 
 ## Does the API work as expected? For example, can you get predictions for a specific country as well as for all countries combined?
@@ -50,7 +52,11 @@ This will execute 4 test:
 
 
 ## Did the EDA investigation use visualizations?
-
+Check out the Python Notebook **Capstone EDA.ipynb** to see the visualisations used
+-> graphically the views per month
+-> revenue per month
+-> evolution of the Revenue
+-> view spectral relationship between revenue and date 
 
 ## Is everything containerized within a working Docker image?
 
