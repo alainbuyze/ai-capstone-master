@@ -2,12 +2,13 @@
 
 ### Are there unit tests for the API?
 The unittests are available in the directory **unittests**, the python module **ApiTests.py**
+
 #### First start the FLASK API
 Set the current directory to the root of the local replica of the repository
 Run the command **python app.py**
 Check if the app is runnin by opening **http://0.0.0.0:8080/** - you should seee the welcome page
-#### Run the tests
 
+#### Run the tests
 From the root directory of the repository, run **python unittests/piTests.py**
 This will execute 4 test:
 1. test the train functionality
@@ -59,9 +60,9 @@ Models compared are:
 5. SVR
 
 Based upon this the model RandomForestRegressor() is kept and analysed for different parameters
-    'n_estimators': [20, 50, 100],
-    'max_features': ['auto', 'sqrt', 'log2'],
-    'max_depth' : [range(5,15)]
+1. 'n_estimators': [20, 50, 100],
+2. 'max_features': ['auto', 'sqrt', 'log2'],
+3. 'max_depth' : [range(5,15)]
 
 
 ## Did the EDA investigation use visualizations?
