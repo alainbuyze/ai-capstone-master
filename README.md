@@ -50,6 +50,18 @@ This will ensure that the logfiles names have no date identifier in their name, 
 
 
 ## Were multiple models compared?
+Check out the Python Notebook **CapstoneModelComparison.ipynb** to see the different models being compared
+Models compared are: 
+1. LinearRegression
+2. MLPRegressor
+3. KNeighborsRegressor
+4. RandomForestRegressor
+5. SVR
+
+Based upon this the model RandomForestRegressor() is kept and analysed for different parameters
+    'n_estimators': [20, 50, 100],
+    'max_features': ['auto', 'sqrt', 'log2'],
+    'max_depth' : [range(5,15)]
 
 
 ## Did the EDA investigation use visualizations?
