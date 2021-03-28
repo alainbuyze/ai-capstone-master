@@ -5,11 +5,14 @@ The unittests are available in the directory **unittests**, the python module **
 
 #### First start the FLASK API
 Set the current directory to the root of the local replica of the repository
+
 Run the command **python app.py**
+
 Check if the app is runnin by opening **http://0.0.0.0:8080/** - you should seee the welcome page
 
 #### Run the tests
 From the root directory of the repository, run **python unittests/piTests.py**
+
 This will execute 4 test:
 1. test the train functionality
 2. test for appropriate failure in case of no data or ill-formed input
@@ -18,7 +21,9 @@ This will execute 4 test:
 
 ## Are there unit tests for the model?
 The unittests are available in the directory **unittests**, the python module **ModelTests.py**
+
 From the root directory of the repository, run **python unittests/ModelTests.py**
+
 This will execute 3 test:
 1. Test the train functionality
 2. test if models have been loaded
@@ -26,7 +31,9 @@ This will execute 3 test:
 
 ## Are there unit tests for the logging?
 The unittests are available in the directory **unittests**, the python module **LoggerTests.py**
+
 From the root directory of the repository, run **python unittests/LoggerTests.py**
+
 This will execute 4 test:
 1. Test if training log file is created
 2. Test if content of Training log file can be retrieved 
@@ -41,6 +48,7 @@ From the root directory of the repository, run **python runtests.py**
 
 ## Was there an attempt to isolate the read/write unit tests from production models and logs?
 This is achieved by the **parameter test=True** in calling the module **update_train_log** and **update_predict_log** in the **LoggerTests.py** module. 
+
 This will ensure that the logfiles names have no date identifier in their name, unlike the regular log files. 
 
 
@@ -52,6 +60,7 @@ This will ensure that the logfiles names have no date identifier in their name, 
 
 ## Were multiple models compared?
 Check out the Python Notebook **CapstoneModelComparison.ipynb** to see the different models being compared
+
 Models compared are: 
 1. LinearRegression
 2. MLPRegressor
