@@ -24,6 +24,13 @@ This will execute 3 test:
 3. test the predict functionality
 
 ## Are there unit tests for the logging?
+The unittests are available in the directory **unittests**, the python module **LoggerTests.py**
+From the root directory of the repository, run **python unittests/LoggerTests.py**
+This will execute 4 test:
+1. Test if training log file is created
+2. Test if content of Training log file can be retrieved 
+3. Test if predict log file is created
+4. Test if content of Preduct log file can be retrieved
 
 ## Can all of the unit tests be run with a single script and do all of the unit tests pass?
  
