@@ -44,7 +44,9 @@ This will execute 4 test:
 From the root directory of the repository, run **python runtests.py** 
  
 ## Is there a mechanism to monitor performance?
+The Python Module **monitoring.py** takes care of that. 
 
+It loads the latest train data for all countries (**latest-train0_1.pickle**) and des an outlier analysis using **wasserstein** 
 
 ## Was there an attempt to isolate the read/write unit tests from production models and logs?
 This is achieved by the **parameter test=True** in calling the module **update_train_log** and **update_predict_log** in the **LoggerTests.py** module. 
