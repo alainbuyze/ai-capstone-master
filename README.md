@@ -15,11 +15,12 @@ Check if the app is runnin by opening **http://0.0.0.0:8080/** - you should seee
 #### Run the tests
 From the root directory of the repository, run **python unittests/ApiTests.py**
 
-This will execute 4 test:
+This will execute 5 test:
 1. test the train functionality
 2. test for appropriate failure in case of no data or ill-formed input
 3. test the predict functionality
 4. test the log functionality
+5. test the data ingestion (invoices to ts data regeneration)
 
 ## Are there unit tests for the model?
 The unittests are available in the directory **unittests**, the python module **ModelTests.py**
@@ -60,6 +61,7 @@ This will ensure that the logfiles names have no date identifier in their name, 
 Please check the **App.py** the "predict" routine takes a dataframe than can contain multiple countries/dates which are calculated by the "xmodel_predict" routine in the **Model.py** module. This is tested in the **unittests/ApiTests.py**, test3. 
 
 ## Does the data ingestion exists as a function or script to facilitate automation?
+The data ingesten is coded as an api in **App.py** , @app.route('/ingest', methods=['GET','POST']). This will regenerate the TS data from the original invoice data from scratch. This is tested through test case ***test_05_ingest*** in **unittests/ApiTests.py**. 
 
 
 ## Were multiple models compared?
