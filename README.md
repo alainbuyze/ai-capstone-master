@@ -1,4 +1,6 @@
 # IBM AI Enterprise Workflow Capstone - Alain Buyze
+Dear Evaluator, 
+please find described how you can verify how I fulfilled the different evaluation criteria for this Capstone project. You should normally be able to run all the below steps in a Ubuntu environment wwith Python 3.8 and with all the Git code downloaded on your local machine in a seperate directory with the subdirectory structure preserved.
 
 ### Are there unit tests for the API?
 The unittests are available in the directory **unittests**, the python module **ApiTests.py**
@@ -11,7 +13,7 @@ Run the command **python app.py**
 Check if the app is runnin by opening **http://0.0.0.0:8080/** - you should seee the welcome page
 
 #### Run the tests
-From the root directory of the repository, run **python unittests/piTests.py**
+From the root directory of the repository, run **python unittests/ApiTests.py**
 
 This will execute 4 test:
 1. test the train functionality
@@ -55,7 +57,7 @@ This will ensure that the logfiles names have no date identifier in their name, 
 
 
 ## Does the API work as expected? For example, can you get predictions for a specific country as well as for all countries combined?
-
+Please check the **App.py** the "predict" routine takes a dataframe than can contain multiple countries/dates which are calculated by the "xmodel_predict" routine in the **Model.py** module. This is tested in the **unittests/ApiTests.py**, test3. 
 
 ## Does the data ingestion exists as a function or script to facilitate automation?
 
