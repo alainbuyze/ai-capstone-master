@@ -98,3 +98,5 @@ Open a terminal from the root directory of the repository and run the commands
 
 
 ## Did they use a visualization to compare their model to the baseline model?
+Check out the Python Notebook **CapstoneModelComparison.ipynb** the last part of it chaptrer **Comparing the model with the actual data and with the baseline model**.
+I created a dataframe with the real y-values, the baseline model y-values and my model y-values and summarized by month and plottted a bar chart to compare the results.
